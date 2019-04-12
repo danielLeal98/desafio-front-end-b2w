@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.scss';
+import swapi from './services/configs/swapi';
 
 class App extends Component {
   render() {
+
+    console.log(swapi.get('planets/3/'))
+
     return (
       <div className="App">
         <header className="App-header">
