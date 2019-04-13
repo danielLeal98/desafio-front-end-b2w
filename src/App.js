@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.scss';
-import swapi from './services/configs/swapi';
+import planets from './services/planets'
 
 class App extends Component {
   render() {
 
-    console.log(swapi.get('planets/3/'))
+    console.log(planets.getPlanet(1))
 
     return (
       <div className="App">
