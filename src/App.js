@@ -1,29 +1,48 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.scss';
 import planets from './services/planets'
 
 class App extends Component {
-  render() {
 
-    console.log(planets.getPlanet(1))
+  constructor(props){
+    super(props)
+    this.state = {
+      planet:{
+        name: " ",
+        rotation_period: '',
+        orbital_period: '',
+        diameter:'',
+        climate:'',
+        gravity:'',
+        terrain: '',
+        surface_water: '',
+        population: '',
+        created: '',
+        edited: '',
+      }
+    }
+  }
+
+  componentWillMount() {
+    let idPlanet = Math.floor(Math.random() * (62 + 1));
+
+    planets.getPlanet(idPlanet).then(planet => {
+      console.log(planet.data)
+      this.setState({planet: planet.data})
+    })
+}
+
+  render() {
 
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <p>{this.state.planet.name}</p>
+        <p>{this.state.planet.climate}</p>
+        <p>{this.state.planet.gravity}</p>
+        <p>{this.state.planet.population}</p>
+        <p>{this.state.planet.diameter}</p>
+        <p>{this.state.planet.terrain}</p>
+
       </div>
     );
   }
