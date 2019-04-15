@@ -30,7 +30,6 @@ class App extends Component {
     })
   };
 
-
   componentWillMount() {
     let idPlanet = Math.floor(Math.random() * 61 + 1);
     planets.getPlanet(idPlanet).then(planet => {
@@ -39,7 +38,6 @@ class App extends Component {
   }
 
   render() {
-
     return (
       <div className="App">
         <p>{this.state.planet.name}</p>
