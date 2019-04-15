@@ -23,14 +23,22 @@ class App extends Component {
     }
   }
 
-  componentWillMount() {
-    let idPlanet = Math.floor(Math.random() * (62 + 1));
-
+  getPlanetData = () => {
+    let idPlanet = Math.floor(Math.random() * 61 + 1);
     planets.getPlanet(idPlanet).then(planet => {
       console.log(planet.data)
       this.setState({planet: planet.data})
     })
-}
+  };
+
+
+  componentWillMount() {
+    let idPlanet = Math.floor(Math.random() * 61 + 1);
+    planets.getPlanet(idPlanet).then(planet => {
+      console.log(planet.data)
+      this.setState({planet: planet.data})
+    })
+  }
 
   render() {
 
@@ -42,7 +50,9 @@ class App extends Component {
         <p>{this.state.planet.population}</p>
         <p>{this.state.planet.diameter}</p>
         <p>{this.state.planet.terrain}</p>
-
+        <div>
+        <input type="button" value="go" onClick={this.getPlanetData}/>
+        </div>
       </div>
     );
   }
