@@ -51,7 +51,7 @@ class App extends Component {
         <p>{this.state.planet.diameter}</p>
         <p>{this.state.planet.terrain}</p>
         <div>
-        <input type="button" value="go" onClick={this.getPlanetData}/>
+        <input type="button" value="ATUALIZAR" onClick={this.getPlanetData}/>
         </div>
       </div>
     );
