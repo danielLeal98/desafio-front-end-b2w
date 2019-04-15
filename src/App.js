@@ -26,7 +26,6 @@ class App extends Component {
   getPlanetData = () => {
     let idPlanet = Math.floor(Math.random() * 61 + 1);
     planets.getPlanet(idPlanet).then(planet => {
-      console.log(planet.data)
       this.setState({planet: planet.data})
     })
   };
@@ -35,7 +34,6 @@ class App extends Component {
   componentWillMount() {
     let idPlanet = Math.floor(Math.random() * 61 + 1);
     planets.getPlanet(idPlanet).then(planet => {
-      console.log(planet.data)
       this.setState({planet: planet.data})
     })
   }
