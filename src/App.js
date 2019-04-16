@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.scss';
-import planets from './services/planets'
-import planet from './components/Planets/planet';
+import planet from './components/Planet/planet';
+import start from './components/Start/start'
 import {Switch, Route} from 'react-router-dom'
 
 
@@ -9,11 +9,12 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <switch>
-          <Route path="/planet" component={planet} />
-        </switch>
-      </div>
+        <div>
+              <Switch>
+                <Route path="/" exact component={start} />
+                <Route path="/planet" component={planet} />
+              </Switch>
+        </div>
     );
   }
 }
