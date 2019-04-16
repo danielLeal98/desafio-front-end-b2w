@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import './styles/index.scss';
+import './styles/app.scss';
 import './styles/stars.scss';
-import './styles/buttons.scss';
 import planet from './components/Planet/planet';
 import start from './components/Start/start';
 import {Switch, Route} from 'react-router-dom';

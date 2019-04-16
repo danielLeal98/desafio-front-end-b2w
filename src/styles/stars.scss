@@ -1,15 +1,3 @@
-@-webkit-keyframes STAR-MOVE {
-	from {
-		left: 0;
-		top: 0;
-	}
-	to { 
-		left: -10000px;
-		top: -2000px;
-	}
-}
-
-
 #background {
 	background: black url(../assets/images/background.png) repeat 5% 5%;
 	position: absolute;
@@ -44,4 +32,16 @@
 	-webkit-animation-duration: 100s;
 	-webkit-animation-timing-function: linear;
 	-webkit-animation-iteration-count: infinite;
+}
+
+
+@-webkit-keyframes STAR-MOVE {
+	from {
+		left: 0;
+		top: 0;
+	}
+	to { 
+		left: -10000px;
+		top: -2000px;
+	}
 }
