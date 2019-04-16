@@ -28,7 +28,7 @@ class planet extends Component {
         this.setState({planet: planet.data})
       })
     };
-  
+    
     componentDidMount() {
         this.getPlanetData()
     }
