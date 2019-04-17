@@ -1,7 +1,4 @@
-    @font-face {
-        font-family: 'Press Start 2p';
-        src:  url(./../assets/fonts/press-start.woff2) format('woff2');
-    }
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
   
   .video-game-button {
     text-shadow: 1px 1px pink, -1px -1px maroon;
