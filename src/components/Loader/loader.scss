@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@import './../../styles/__variables.scss';
+
+.loader-div {
+
+    .blink-loader {
+        font-family: 'Press Start 2P';
+        color: #fff;
+        text-align: center;
+        margin: auto;
+        font-size: 1em;
+        letter-spacing: .05em;
+        margin-bottom: 5vh;
+        animation: blink 1s steps(2, start) infinite;
+    }
+
+
+}
+
+@-moz-keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
+  
+  @-webkit-keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
+  
+  @keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }

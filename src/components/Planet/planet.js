@@ -52,7 +52,7 @@ class planet extends Component {
           </div>
           <div className="films-featured">FEATURED IN {this.state.planet.films.length} FILMS</div>
       </div>
-  <input className="start-btn" type="button" value="NEXT" onClick={this.getPlanetData} />
+      <input className="start-btn" type="button" value="NEXT" onClick={this.getPlanetData} />
   </div>
       );
     }
