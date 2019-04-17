@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Exo+2:400,500,600,700,800,900');
 @import './../../styles/buttons';
 
+
+$colorWhite: #fff;
+
+
     .planet-card{
         font-family: 'Exo 2', sans-serif;
         align-self:center;
@@ -30,7 +34,11 @@
             transform: translateY(-35px);
             text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
         }
-    
+
+        .films-featured{
+          color: $colorWhite;
+          padding-bottom: 15px;
+        }
     
     }
 
@@ -104,16 +112,17 @@
   padding-right: 10px;
   
 }
-
-li{
-  list-style: none;
-  margin: 25px auto;
-  padding:0px;
-}
 ul{
   margin: 0px auto;
   padding: 0px;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
+  
+  li{
+    list-style: none;
+    margin: 25px auto;
+    padding:0px;
+  }
+
 }
 
 div{

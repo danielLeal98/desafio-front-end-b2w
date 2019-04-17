@@ -19,6 +19,7 @@ class planet extends Component {
           population: '',
           created: '',
           edited: '',
+          films: [],
         }
       }
     }
@@ -49,6 +50,7 @@ class planet extends Component {
               <li><span>DIAMETER</span> <span>{this.state.planet.diameter}</span></li>
             </ul>
           </div>
+          <div className="films-featured">FEATURED IN {this.state.planet.films.length} FILMS</div>
       </div>
   <input className="start-btn" type="button" value="NEXT" onClick={this.getPlanetData} />
   </div>
