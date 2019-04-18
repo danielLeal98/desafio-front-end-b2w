@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './styles/app.scss';
 import './styles/stars.scss';
-import planet from './components/Planet/planet';
-import start from './components/Start/start';
+import Planet from './components/Planet/Planet';
+import Start from './components/Start/Start';
 import loader from './components/Loader/Loader';
 import {Switch, Route} from 'react-router-dom';
 
@@ -13,8 +13,8 @@ class App extends Component {
         <div>
           <div className="container">
               <Switch>
-                  <Route path="/" exact component={start} />
-                  <Route path="/planet" component={planet} />
+                  <Route path="/" exact component={Start} />
+                  <Route path="/planet" component={Planet} />
                   <Route path="/loader" component={loader} />
               </Switch>
           </div>

@@ -1,32 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
-  
-  .video-game-button {
-    text-shadow: 1px 1px pink, -1px -1px maroon;
-    line-height: 1.5em;
-    text-align: center;
-    display: inline-block;
-    width: 1.5em;
-    -webkit-border-radius: .75em;
-    -moz-border-radius: .75em;
-    -o-border-radius: .75em;
-    border-radius: .75em;
-    background-color: red;
-    -webkit-box-shadow: 0 .2em maroon;
-    -moz-box-shadow: 0 .2em maroon;
-    -o-box-shadow: 0 .2em maroon;
-    box-shadow: 0 .2em maroon;
-    color: red;
-    margin: 5px;
-    background-color: red;
-    background-image: -o-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
-    background-image: -moz-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
-    background-image: -webkit-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
-    background-image: linear-gradient(left top, pink 3%, red 22%, maroon 99%);
-    cursor: pointer;
-    padding-left: 5px;
-    font-family: 'Press Start 2p';
-    text-decoration: none;
-  }
+
   
   .start-btn {
     text-align: center;

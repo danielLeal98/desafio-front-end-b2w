@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 
-class error extends Component {
+class Error extends Component {
     state = {  }
     render() {
         return (
             <div>
+            <p>ERROR</p>
             </div>
         );
     }
 }
 
-export default error;
+export default Error;

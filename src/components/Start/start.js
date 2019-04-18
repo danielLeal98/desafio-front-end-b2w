@@ -4,7 +4,7 @@ import './start.scss';
 
 let startBanner = require('./../../assets/images/start-banner.png');
 
-class start extends Component {
+class Start extends Component {
 
     render() {
         return (
@@ -17,4 +17,4 @@ class start extends Component {
     }
 }
 
-export default start;
+export default Start;

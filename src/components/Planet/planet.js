@@ -1,27 +1,19 @@
 import React, { Component } from 'react';
-import planets from '../../services/planets'
-import Loader from '../Loader/Loader'
+import planets from '../../services/planets';
+import Loader from '../Loader/Loader';
+import Error from '../Error/Error';
 import './planet.scss'
 
-class planet extends Component {
+class Planet extends Component {
 
     constructor(props){
       super(props)
       this.state = {
+        error: false,
         loading: '',
         planet:{
-          name: '',
-          rotation_period: '',
-          orbital_period: '',
-          diameter:'',
-          climate:'',
-          gravity:'',
-          terrain: '',
-          surface_water: '',
-          population: '',
-          created: '',
-          edited: '',
-          films: [],
+          name: '', rotation_period: '', orbital_period: '', diameter:'',
+          climate:'', gravity:'', terrain: '', population: '', films: [],
         }
       }
     }
@@ -32,18 +24,28 @@ class planet extends Component {
       planets.getPlanet(idPlanet).then(planet => {
         this.setState({
           planet: planet.data,
-          loading: false
+          loading: false,
+          error: planet.ok
+        })
+      }).catch(error =>{
+        this.setState({
+          loading: false,
+          error: false
         })
       })
     };
-    
+
     componentDidMount() {
         this.getPlanetData()
     }
-  
-    render() {
+
+  render() {
+      
       if(this.state.loading){
         return <Loader />
+      }
+      if(this.state.error == false){
+        return <Error />
       }
 
 
@@ -69,5 +71,5 @@ class planet extends Component {
     }
   }
   
-  export default planet;
+  export default Planet;
   
