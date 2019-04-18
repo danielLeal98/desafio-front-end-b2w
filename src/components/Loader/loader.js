@@ -4,7 +4,7 @@ import './loader.scss'
 let imageLoader = require('./../../assets/images/loader.gif');
 
 
-class loader extends Component {
+class Loader extends Component {
 
     render() {
         return (
@@ -16,4 +16,4 @@ class loader extends Component {
     }
 }
 
-export default loader;
+export default Loader;

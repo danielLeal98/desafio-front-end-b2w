@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import planets from '../../services/planets'
+import Loader from './../Loader/loader'
 import './planet.scss'
 
 class planet extends Component {
@@ -7,6 +8,7 @@ class planet extends Component {
     constructor(props){
       super(props)
       this.state = {
+        loading: '',
         planet:{
           name: '',
           rotation_period: '',
@@ -26,8 +28,12 @@ class planet extends Component {
   
     getPlanetData = () => {
       let idPlanet = Math.floor(Math.random() * 61 + 1);
+      this.setState({loading: true})
       planets.getPlanet(idPlanet).then(planet => {
-        this.setState({planet: planet.data})
+        this.setState({
+          planet: planet.data,
+          loading: false
+        })
       })
     };
     
@@ -36,7 +42,12 @@ class planet extends Component {
     }
   
     render() {
-      return ( 
+      if(this.state.loading){
+        return <Loader />
+      }
+
+
+  return ( 
     <div>
       <div className="planet-card">
         <div className="toph"><h1>PLANET</h1></div>

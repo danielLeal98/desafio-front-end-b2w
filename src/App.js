@@ -3,7 +3,7 @@ import './styles/app.scss';
 import './styles/stars.scss';
 import planet from './components/Planet/planet';
 import start from './components/Start/start';
-import loader from './components/Loader/loader';
+import loader from './components/Loader/Loader';
 import {Switch, Route} from 'react-router-dom';
 
 class App extends Component {
