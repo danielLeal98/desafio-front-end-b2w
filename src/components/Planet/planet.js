@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import planets from '../../services/planets'
-import Loader from './../Loader/loader'
+import Loader from '../Loader/Loader'
 import './planet.scss'
 
 class planet extends Component {
