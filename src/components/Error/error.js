@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import './error.scss'
 
-let imageError = require('./../../assets/images/start-banner.png');
+let imageError = require('./../../assets/images/error-banner.gif');
 
 class Error extends Component {
 
