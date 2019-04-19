@@ -44,7 +44,7 @@ class Planet extends Component {
       if(this.state.loading){
         return <Loader />
       }
-      if(this.state.error == false){
+      if(this.state.error === false){
         return <Error />
       }
 

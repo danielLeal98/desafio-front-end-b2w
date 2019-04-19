@@ -3,7 +3,8 @@ import './styles/app.scss';
 import './styles/stars.scss';
 import Planet from './components/Planet/Planet';
 import Start from './components/Start/Start';
-import loader from './components/Loader/Loader';
+import Loader from './components/Loader/Loader';
+import Error from './components/Error/Error';
 import {Switch, Route} from 'react-router-dom';
 
 class App extends Component {
@@ -15,7 +16,8 @@ class App extends Component {
               <Switch>
                   <Route path="/" exact component={Start} />
                   <Route path="/planet" component={Planet} />
-                  <Route path="/loader" component={loader} />
+                  <Route path="/loader" component={Loader} />
+                  <Route path="/error" component={Error} />
               </Switch>
           </div>
           <div id="background"></div>
