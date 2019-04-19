@@ -1,8 +1,27 @@
-@import './_keyframes';
+@import './_keyframes.scss';
+@import './_variables.scss';
+@import './stars.scss';
+
 
 * {
   padding: 0;
   margin: 0;
+}
+
+@media screen and (max-width: $break-small){
+
+  html{
+    height: 115vh;
+    background-color: $colorBlack;
+  }
+}
+
+@media screen and (max-width: $break-medium){
+
+  html{
+    height: 110vh;
+    background-color: $colorBlack;
+  }
 }
 
 .container{
