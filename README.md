@@ -26,14 +26,14 @@ Para isso utilizei a [API SWAPI](https://swapi.co/)
 
 # Para acessar o projeto:
 
-[CLIQUE AQUI](#)
+[CLIQUE AQUI](https://ymello-sw.netlify.com/)
 
 ou
 
 Copie o link abaixo e cole no navegador.
 
 ```
-#
+https://ymello-sw.netlify.com/
 
 ```
 
