@@ -14,9 +14,9 @@ Para isso utilizei a [API SWAPI](https://swapi.co/)
 - SASS
 - CSS3
 - Javascript (ES6)
-- [React.js](https://vuejs.org/)
-- [React-router-dom](https://vuex.vuejs.org/)
-- [ApiSauce](https://vuex.vuejs.org/)
+- [React.js](https://reactjs.org/)
+- [React-router-dom](https://www.npmjs.com/package/react-router-dom)
+- [ApiSauce](https://github.com/infinitered/apisauce)
 - [API SWAPI](https://swapi.co/)
 - [Yarn](https://yarnpkg.com/)
 
