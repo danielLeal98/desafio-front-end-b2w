@@ -1,2 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 
-$fontPressStart: url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+
+$fontExo: 'Exo 2', sans-serif;
+$fontPressStart: 'Press Start 2P';
+
+$colorWhite: #fff;
+$secondColor: #efefef;
+$fontTitleColor: #efefef;
+
+
+// PLANET CARD VARIABLES
+$cardColorPrimary: rgb(83, 133, 145);
+$cardColorSecundary: #fff;
+$backgroundCard: rgba(5, 13, 25, 0.569);
+$shadowColor: #D420D4;
+$textShadowColor: rgba(0, 0, 0, 0.25);
+$infoColor: #CDC5BD;
+
+// BRAKEPOINTS VARIABLES
+$break-small: 350px;
+$break-medium: 480px;
+
+
+//PARALLAX VARIABLES
+$parallaxBackground: black url(../assets/images/background.png) repeat 5% 5%;
+$parallaxMidground: url(../assets/images/midground.png) repeat 20% 20%;
+$parallaxForeground: url(../assets/images/foreground.png) repeat 35% 35%;

@@ -1,0 +1,20 @@
+@mixin border-radius($property) {
+    -webkit-border-radius: $property;
+    -moz-border-radius: $property;
+    -o-border-radius: $property;
+    border-radius: $property;
+}
+
+@mixin animation($name, $duration, $timing, $cont) {
+    -webkit-animation-name: $name;
+	-webkit-animation-duration: $duration;
+	-webkit-animation-timing-function: $timing;
+	-webkit-animation-iteration-count: $cont;
+}
+
+@mixin directions($top, $left, $right, $bottom) {
+    top: $top;
+    left: $left;
+    right: $right;
+    bottom: $bottom;
+}

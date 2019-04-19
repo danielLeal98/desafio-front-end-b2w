@@ -50,7 +50,7 @@ class Planet extends Component {
 
 
   return ( 
-    <div>
+    <div className="plannet">
       <div className="planet-card">
         <div className="toph"><h1>PLANET</h1></div>
           <h1>{this.state.planet.name}</h1>

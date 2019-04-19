@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@import './_variables';
+@import './_mixins';
 
   
-  .start-btn {
+.start-btn {
     text-align: center;
     display: inline-block;
     margin: 5px;
@@ -10,19 +11,29 @@
     background-color: lightgray;
     text-shadow: -1px -1px black, 1px 1px white;
     color: gray;
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-    -o-border-radius: 7px;
-    border-radius: 7px;
+    @include border-radius(7px);
     box-shadow: 0 .2em gray;
     cursor: pointer;
-    font-family: 'Press Start 2p';
+    font-family: $fontPressStart;
     text-decoration: none;
     font-size: 3em;
-  }
-  
-  .video-game-button:active, .start-btn:active {
-    box-shadow: none;
-    position: relative;
-    top: .2em;
+
+    &:active {
+      box-shadow: none;
+      position: relative;
+      top: .2em;
+    }
+    
+ }
+
+
+.blink-start {
+  font-family: $fontPressStart;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  font-size: 1.5em;
+  letter-spacing: .05em;
+  margin-bottom: 5vh;
+  animation: blink 1s steps(4, start) infinite;
   }

@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@import './../../styles/_variables';
+@import './../../styles/buttons.scss';
+@import './../../styles/_keyframes.scss';
 
 
 .startpage{
@@ -7,58 +9,7 @@
 
     img{
         width: 100%;
-        margin-bottom: 5vh
+        margin-bottom: 5vh;
     }
 
-    .start-btn {
-        text-align: center;
-        display: inline-block;
-        margin: 5px;
-        font-weight: bold;
-        padding: 10px 0 10px 10px;
-        background-color: lightgray;
-        text-shadow: -1px -1px black, 1px 1px white;
-        color: gray;
-        -webkit-border-radius: 7px;
-        -moz-border-radius: 7px;
-        -o-border-radius: 7px;
-        border-radius: 7px;
-        box-shadow: 0 .2em gray;
-        cursor: pointer;
-        font-family: 'Press Start 2p';
-        text-decoration: none;
-        font-size: 3em;
-    }
-
-
-    .blink-start {
-    font-family: 'Press Start 2P';
-    color: #fff;
-    text-align: center;
-    margin: auto;
-    font-size: 1.5em;
-    letter-spacing: .05em;
-    margin-bottom: 5vh;
-    animation: blink 1s steps(4, start) infinite;
-    }
-
-}
-
-
-@-moz-keyframes blink {
-  to {
-    visibility: hidden;
-  }
-}
-
-@-webkit-keyframes blink {
-  to {
-    visibility: hidden;
-  }
-}
-
-@keyframes blink {
-  to {
-    visibility: hidden;
-  }
 }

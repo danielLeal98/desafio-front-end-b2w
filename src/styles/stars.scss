@@ -1,47 +1,30 @@
+@import './_variables';
+@import './_mixins';
+@import './_keyframes';
+
 #background {
-	background: black url(../assets/images/background.png) repeat 5% 5%;
+	background: $parallaxBackground;
 	position: absolute;
-	top: 0; left: 0; right: 0; bottom: 0;
 	z-index: 100;
-	
-	-webkit-animation-name: STAR-MOVE;
-	-webkit-animation-duration: 200s;
-	-webkit-animation-timing-function: linear;
-	-webkit-animation-iteration-count: infinite;
+
+	@include directions(0, 0, 0, 0);
+	@include animation(STAR-MOVE, 200s, linear, infinite);
 }
 
 #midground {
-	background: url(../assets/images/midground.png) repeat 20% 20%;
+	background: $parallaxMidground;
 	position: absolute;
-	top: 0; left: 0; right: 0; bottom: 0;
 	z-index: 200;
-	
-	-webkit-animation-name: STAR-MOVE;
-	-webkit-animation-duration: 150s;
-	-webkit-animation-timing-function: linear;
-	-webkit-animation-iteration-count: infinite;
+
+	@include directions(0, 0, 0, 0);
+	@include animation(STAR-MOVE, 150s, linear, infinite);
 }
 
 #foreground {
-	background: url(../assets/images/foreground.png) repeat 35% 35%;
+	background: $parallaxForeground;
 	position: absolute;
-	top: 0; left: 0; right: 0; bottom: 0;
 	z-index: 300;
 	
-	-webkit-animation-name: STAR-MOVE;
-	-webkit-animation-duration: 100s;
-	-webkit-animation-timing-function: linear;
-	-webkit-animation-iteration-count: infinite;
-}
-
-
-@-webkit-keyframes STAR-MOVE {
-	from {
-		left: 0;
-		top: 0;
-	}
-	to { 
-		left: -10000px;
-		top: -2000px;
-	}
+	@include directions(0, 0, 0, 0);
+	@include animation(STAR-MOVE, 100s, linear, infinite);
 }

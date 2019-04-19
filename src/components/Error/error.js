@@ -11,7 +11,7 @@ class Error extends Component {
             <div className="error-div">
                 <img src={imageError} alt="erro banner" />
                 <h4 className="erro-text">Ops..Ocorreu um erro.</h4>
-                <Link className="start-btn" to="/planet">RESTART</Link>
+                <Link className="start-btn" to="/">RESTART</Link>
             </div>
         );
     }
