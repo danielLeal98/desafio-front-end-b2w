@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import planets from '../../services/planets';
-import Loader from '../Loader/Loader';
-import Error from '../Error/Error';
+import Loader from '../Loader/Loader.js';
+import Error from '../Error/Error.js';
 import './planet.scss'
 
 class Planet extends Component {
