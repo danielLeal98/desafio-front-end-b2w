@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './styles/app.scss';
 import './styles/stars.scss';
-import Planet from './components/Planet/Planet.js';
-import Start from './components/Start/Start.js';
+import Planet from './components/Planet/Planet';
+import Start from './components/Start/Start';
 import {Switch, Route} from 'react-router-dom';
 
 class App extends Component {
